@@ -1,0 +1,5 @@
+services:
+  ecedi_basics.customTwigExtension:
+    class: Drupal\ecedi_basics\CustomTwigExtension
+    tags:
+      - { name: twig.extension }

@@ -1,0 +1,13 @@
+scrollnav:
+  version: VERSION
+  js:
+    js/cff_blocks_scrollnav.js: {}
+  dependencies:
+    - core/jquery.once
+    - core/drupal
+    - cff_blocks/scrollnav_library
+
+scrollnav_library:
+  version: VERSION
+  js:
+    js/scrollnav.min.umd.js: { minified: true }

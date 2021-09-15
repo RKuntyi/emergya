@@ -1,0 +1,7 @@
+name: emergya_products
+type: module
+description: Custom functionality for "Commerce" module.
+package: Custom
+core_version_requirement: ^8 || ^9
+dependencies:
+  - views

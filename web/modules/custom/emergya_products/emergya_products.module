@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Main module file for "Lilote Commerce".
+ */
+
+use Drupal\views\ViewExecutable;
+
+function emergya_products_views_pre_render(ViewExecutable $view) {
+  if ($view->id() == 'products') {
+    $results = $view->result;
+    if (!isset($_COOKIE['cookieconsent_dismissed'])) {
+      foreach ($results as $key => $result) {
+        if ($result->_entity->get('protected')->value == 1) {
+          unset($view->result[$key]);
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function emergya_products_theme() {
+  $theme = [];
+  $theme['emergya_products'] = [
+    'variables' => [
+      'source' => NULL
+    ]
+  ];
+
+  return $theme;
+}

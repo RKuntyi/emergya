@@ -1,0 +1,5 @@
+assign roles:
+  title: 'Assign roles'
+  description: '<em>Warning: Give to trusted roles only; this permission has
+  security implications.</em> Allow user to assign roles to users. Need
+  <em>Administer users</em> permission to be applicable.'
