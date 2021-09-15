@@ -1,5 +1,0 @@
-name: 'Ecedi basics'
-type: module
-description: 'Provide generic tools and helpers to develop faster.'
-core_version_requirement: ^8 || ^9
-package: 'Ecedi'

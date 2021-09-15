@@ -25,4 +25,5 @@ class EmergyaProducts extends BlockBase {
       '#source' => views_embed_view('products', 'page_1'),
     ];
   }
+
 }
